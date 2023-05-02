@@ -34,7 +34,7 @@ export default function BookList() {
         data: {
           data: { books },
         },
-      } = await axios.get('https://books-api.anggakurnia.me/books');
+      } = await axios.get('http://13.228.170.117:8000/');
 
       if (keyword) {
         const filteredBooks = books.filter((book) =>
