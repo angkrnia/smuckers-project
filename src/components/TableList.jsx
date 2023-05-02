@@ -27,7 +27,7 @@ export default function TableList({ data, ...props }) {
   const handleDeleteData = async () => {
     try {
       await axios.delete(
-        `https://books-api.anggakurnia.me/books/${showModal.id}`,
+        `http://13.228.170.117:8000/books/${showModal.id}`,
         {
           headers: {
             token: JSON.parse(localStorage.getItem('authentications')),
